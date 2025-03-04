@@ -6,6 +6,7 @@ import Input from './components/Input';
 import TodoList from './components/TodoList';
 import { saveToLocalStorage,getFromLocalStorage } from './utils/storage';
 import React,{useState,useEffect} from 'react';
+import Info from './components/info';
 function App() {
   //  state for input 
   const [inputValue,setInputValiue]= useState('');
@@ -28,11 +29,7 @@ function App() {
     
     <div className="App">
       <NavBar />
-      <Title text='This is react to do app'/>
-      <Input value={inputValue}  onChange={setInputValiue}/>
-      <Button text='add to do' onClick={handelAdd} />
-      <TodoList todos={todos}/>
-      
+      <Info />
     </div>
   );
 }
