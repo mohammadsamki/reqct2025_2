@@ -11,6 +11,7 @@ import { useContext } from 'react';
 import MyContext from './components/myContext';
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import ResponsiveGrid from './components/cards';
+import DataTable from './components/tablePage';
 
 function App() {
   //  state for input 
@@ -39,6 +40,7 @@ function App() {
         <Routes>
           <Route path='/info' element={<Info/>}/>
           <Route path='/' element={<ResponsiveGrid/>}/>
+          <Route path='/table' element={<DataTable/>}/>
           
         </Routes>
     
